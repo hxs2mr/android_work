@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFBFD"
+    >
+    <TextView
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textSize="14sp"
+        android:textColor="#A2ADCE"
+        android:text="确定清空本地数据？（包括语音，图片等）"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+<TextView
+    android:id="@+id/delete_cookie"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:text="清空缓存"
+    android:background="#ffffff"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:textColor="#FD5EA1"
+    />
+    <TextView
+        android:id="@+id/delete_quxiao"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="取消"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#898EA6"
+        />
+</LinearLayout>

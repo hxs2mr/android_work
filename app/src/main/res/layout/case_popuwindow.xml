@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FAFBFD"
+    android:layout_gravity="top|center"
+    >
+
+<TextView
+    android:id="@+id/case_popu_user1"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:layout_marginTop="10dp"
+    android:textColor="#7FBDFF"
+    android:textSize="16sp"
+    android:background="#ffffff"
+    android:text="阿斯顿(隔壁)"
+    android:layout_gravity="center"
+    android:gravity="center"
+    />
+
+    <TextView
+        android:id="@+id/case_popu_user2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#7FBDFF"
+        android:textSize="16sp"
+        android:background="#ffffff"
+        android:text="阿斯达(楼下)"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/case_popu_user3"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#7FBDFF"
+        android:textSize="16sp"
+        android:background="#ffffff"
+        android:text="阿斯达(楼下)"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/case_popu_back"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FD5EA1"
+        android:textSize="16sp"
+        android:background="#ffffff"
+        android:text="取消"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+</LinearLayout>
+</LinearLayout>

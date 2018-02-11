@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:qdx="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/book_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FAFBFD"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="#7FBDFF"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+        <microtech.hxswork.com.android_work.widget.BezierViewPager
+            android:id="@+id/view_page"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:overScrollMode="never" />
+
+            <microtech.hxswork.com.android_work.widget.hcrollvipager.BezierRoundView
+                android:id="@+id/bezRound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@id/view_page"
+                android:background="#FAFBFD"
+                qdx:color_bez="#38E6FF"
+                qdx:color_stroke="#D1DDE6"
+                qdx:color_touch="#D1DDE6"
+                qdx:radius="20dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+        <LinearLayout
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mTabLayout"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="#FAFBFD"
+        app:tabMode="scrollable"
+        android:layout_height="40dp"/>
+<android.support.v4.view.ViewPager
+    android:id="@+id/id_vp"
+    android:layout_width="match_parent"
+    android:background="#FAFBFD"
+    android:layout_height="wrap_content"
+    android:fadingEdge="none"
+    android:scrollbars="none"
+   />
+        </LinearLayout>
+</LinearLayout>

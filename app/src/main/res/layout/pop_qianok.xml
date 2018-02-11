@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/qian_pop_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="#ffffff"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="提交成功"
+    android:textSize="18sp"
+    android:textColor="#898EA6"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#f4f8fc"
+        >
+<ImageView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="86dp"
+    android:background="@mipmap/qianok_bg"
+    />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="提交成功"
+            android:textColor="#898EA6"
+            android:textSize="20sp"
+            android:layout_marginTop="24dp"
+            />
+    <TextView
+        android:layout_width="193dp"
+        android:layout_height="wrap_content"
+        android:textColor="#A2ADCE"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:text="我们会在24小时内为您安排签约医生，情耐心等待。"
+        />
+
+        <TextView
+            android:id="@+id/qianok_back"
+            android:layout_width="230dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@mipmap/btn_login"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="返回首页"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

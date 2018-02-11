@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">zxing</string>
+    <string name="scan_text">放入框中即可进行二维码扫描</string>
+</resources>

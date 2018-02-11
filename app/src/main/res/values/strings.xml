@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">蜂鸟健康</string>
+    <string name="home">数据</string>
+    <string name="concern">服务</string>
+    <string name="classify">医生</string>
+    <string name="own">我的</string>
+
+
+    <string name="input_hint">Send message</string>
+    <string name="message_click_hint">Message click event</string>
+    <string name="message_long_click_hint">Message long press event</string>
+    <string name="avatar_click_hint">Avatar click event</string>
+
+    <!-- Request permission start -->
+    <string name="rationale_record_voice">This app needs access microphone to record voice.</string>
+    <string name="rationale_photo">This app needs access photos.</string>
+    <string name="rationale_camera">This app needs access camera.</string>
+    <!-- Request permission end -->
+
+    <string-array name="messages_array">
+        <item>How are you</item>
+        <item>Fine. And you?</item>
+        <item>Me, too. Is there any news today?</item>
+        <item>Yep! I got a news here: boom! Tomorrow is the end of The Walking Dead!</item>
+        <item>Are you kidding me?</item>
+        <item>Absolutely not!</item>
+        <item>Jesus, that\'s crazy</item>
+        <item>I thought no one would gonna to make it</item>
+        <item>That\'s cruel, I don\'t like it, maybe there is a favourable turn</item>
+        <item>Hope so</item>
+    </string-array>
+        <string name="behavior_contents">microtech.hxswork.com.android_work.behavior.uc.UcNewsContentBehavior</string>
+        <string name="behavior_uc_header_pager">microtech.hxswork.com.android_work.behavior.uc.UcNewsHeaderPagerBehavior</string>
+        <string name="behavior_uc_title">microtech.hxswork.com.android_work.behavior.uc.UcNewsTitleBehavior</string>
+        <string name="behavior_uc_news_tab">microtech.hxswork.com.android_work.behavior.uc.UcNewsTabBehavior</string>
+
+</resources>

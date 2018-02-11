@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+android {
+    useLibrary 'org.apache.http.legacy'//
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    allprojects {
+        repositories {
+            maven { url "https://jitpack.io" }
+            jcenter()
+        }
+    }
+    defaultConfig {
+        applicationId "microtech.hxswork.com.android_work"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 2
+        versionName "1.1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi-v7a", "x86","arm64-v8a","x86_64",'armeabi', 'armeabi-v7a', 'arm64-v8a'
+        }
+        manifestPlaceholders = [
+                XG_ACCESS_ID:"2100269703",
+                XG_ACCESS_KEY :"AJP73PL135MA",
+        ]
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFile 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+//应用 Bugtags 插件
+apply plugin: 'com.bugtags.library.plugin'
+//Bugtags 插件配置
+bugtags {
+    //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+    appKey "3905e7f54f9ce98abc3c9bbb7f60a87c"  //这里是你的 appKey
+    appSecret "adc2be42b59bc5ec53d628395bd04a71"    //这里是你的 appSecret，管理员在设置页可以查看
+    mappingUploadEnabled true
+    //网络跟踪功能配置(企业版)
+    trackingNetworkEnabled true
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.bugtags.library:bugtags-lib:latest.integration'//
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.13'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.youth.banner:banner:1.4.9'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    compile 'pub.devrel:easypermissions:0.4.0'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+
+    compile 'com.tencent.xinge:xinge:3.1.81-alpha'
+    //mid包
+    compile 'com.tencent.mid:mid:3.72.4-alpha'
+
+    compile project(':commom')
+    compile project(':photopicker')
+    compile project(':zxing')
+    // 添加依赖。注意，版本号必须一致。
+    // 基础功能 (必需)
+    // 音视频需要
+    // compile 'com.netease.nimlib:avchat:3.9.0'
+    // 聊天室需要
+    //compile 'com.netease.nimlib:chatroom:3.9.0'
+    // 实时会话服务需要
+    //compile 'com.netease.nimlib:rts:3.9.0'
+    // 全文检索服务需要
+    //compile 'com.netease.nimlib:lucene:3.9.0'
+    compile 'com.github.XanderWang:elasticity:1.0.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    compile project(':citypicker')
+    compile project(path: ':uikit')
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/umeng_social_tool.jar')
+}

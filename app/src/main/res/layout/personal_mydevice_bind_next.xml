@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/personal_mydevice_back_linear"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <ImageView
+            android:id="@+id/personal_mydevice_back"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dp"
+            android:background="@mipmap/personal_all_left" />
+</LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:text="绑定设备使用者"
+            android:textColor="#798DAA"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="40dp"
+            android:visibility="invisible"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="14dp"
+                android:background="@mipmap/personal_all_left" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F0F5"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#F4F8FC"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/bind_abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_buttona"
+            />
+    <TextView
+        android:id="@+id/bind_title"
+        android:textColor="#768AA6"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:text="物理按键A对应的使用者"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="#798DAA"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/personal_mydevice_bindname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:background="@null"
+            android:backgroundTint="@null"
+            android:gravity="center|right"
+            android:textColorHint="#D1DDE6"
+            android:hint="姓名（必填）"
+            android:textColor="#798DAA"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F0F5"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="手机"
+            android:textColor="#798DAA"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/personal_mydevice_bindphone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@null"
+            android:gravity="center|right"
+            android:hint="请如实填写，获取体征数据的唯一标识"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColorHint="#CAD8E2"
+            android:textColor="#798DAA"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F0F5"
+        />
+    <LinearLayout
+        android:id="@+id/personal_linear_device1"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="6dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="生日"
+            android:textColor="#798DAA"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/personal_mydevice_barthday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/personal_all_down"
+            android:gravity="center|right"
+            android:text="1994-06-11"
+            android:textColor="#CAD8E2"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F0F5"
+        />
+
+    <LinearLayout
+        android:id="@+id/personal_linear_device"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="6dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:text="身份"
+            android:textColor="#798DAA"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/personal_mydevice_guanxi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableRight="@mipmap/personal_all_down"
+            android:gravity="center|right"
+            android:text="父亲"
+            android:textColor="#D1DDE6"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F0F5"
+        />
+
+    <TextView
+        android:id="@+id/bind_tijiao"
+        android:layout_marginTop="38dp"
+        android:layout_width="262dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@mipmap/btn_login"
+        android:textSize="18sp"
+        android:paddingBottom="5dp"
+        android:textColor="#ffffff"
+        android:text="提交"
+        />
+</LinearLayout>

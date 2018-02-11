@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    >
+
+
+<LinearLayout
+    android:layout_marginTop="16dp"
+    android:id="@+id/sing_time_linear"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="#F4F8FC"
+    android:layout_height="36dp">
+
+<TextView
+    android:id="@+id/sign_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#898EA6"
+    android:textSize="16sp"
+    android:drawableLeft="@mipmap/icon_start"
+    android:layout_marginLeft="12dp"
+    android:gravity="center"
+    android:drawablePadding="3dp"
+    android:layout_gravity="center|left"
+    android:text="2017/9/21"
+    />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:id="@+id/sing_data_linear"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_height="36dp">
+
+        <TextView
+
+            android:id="@+id/sign_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FD5EA1"
+            android:textSize="15sp"
+            android:layout_marginLeft="28dp"
+            android:layout_gravity="center"
+            android:text="130/80mmHg"
+            />
+
+        <TextView
+            android:id="@+id/sign_zhuantai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:text="偏高"
+            android:textColor="#FD5EA1"
+            android:layout_marginLeft="40dp"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right|center"
+            android:textSize="15sp"
+            android:layout_marginRight="15dp"
+            android:text="02:13"
+            android:textColor="#D1DDE6"
+
+            />
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4F8FC"
+    >
+
+    <LinearLayout
+        android:id="@+id/sign_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:padding="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="4dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="#3AE5FF"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="体征数据"
+            android:layout_marginLeft="12dp"
+            android:textColor="#8FACC8"
+            android:textSize="16sp"
+            android:layout_gravity="left|center"
+            android:gravity="center|left"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#F6F9FB" />
+        <LinearLayout
+            android:id="@+id/xueya_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="3dp"
+                    android:text="血压"
+                    android:textColor="#798DAA"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/home_sign_nodata1"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="17sp"
+                    android:textColor="#D1DDE6"
+                    android:visibility="gone"
+                    android:text="暂无数据请及时测量"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/home_signdata_linear1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sign_xueya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/0"
+                        android:layout_gravity="center|top"
+                        android:gravity="top"
+                        android:textColor="#798DAA"
+                        android:textSize="32sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/danwei2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="mmhg"
+                        android:textColor="#798DAA"
+                        android:textSize="12sp"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sign_xueya_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left" />
+
+            <FrameLayout
+                android:id="@+id/sign_data_framelayout1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sign_xueya_jieguo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:textSize="15sp"
+                    android:drawableRight="@mipmap/home_right"
+                    android:gravity="center|right"
+                    android:text="偏低"
+                    android:textColor="#3AE5FE" />
+
+                <TextView
+                    android:id="@+id/sign_xueya_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|right"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="6小时前"
+                    android:textColor="#CAD8E2"
+                    android:textSize="10sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#F6F9FB" />
+
+        <LinearLayout
+            android:id="@+id/xuelu_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="3dp"
+                    android:text="心率"
+                    android:textColor="#798DAA"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/home_sign_nodata2"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="17sp"
+                    android:textColor="#D1DDE6"
+                    android:visibility="gone"
+                    android:text="暂无数据请及时测量"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/home_signdata_linear2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/sign_xinlu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center|top"
+                        android:gravity="top"
+                        android:textColor="#798DAA"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/danwei5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="次/每分钟"
+                        android:textColor="#798DAA"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sign_xinlu_data"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textSize="15sp"
+                android:textColor="#CFD9E8" />
+
+            <FrameLayout
+                android:id="@+id/sign_data_framelayout2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sign_xinlu_jieguo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/home_right"
+                    android:gravity="center|right"
+                    android:text="正常"
+                    android:textColor="#3AE5FE"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sign_xinlu_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|right"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2天前"
+                    android:textColor="#CAD8E2"
+                    android:textSize="10sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#F6F9FB" />
+
+        <LinearLayout
+            android:id="@+id/xueyan_linear"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="3dp"
+                    android:text="血氧"
+                    android:textColor="#798DAA"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/home_sign_nodata3"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="17sp"
+                    android:textColor="#D1DDE6"
+                    android:visibility="gone"
+                    android:text="暂无数据请及时测量"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/home_signdata_linear3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sign_xueyan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:gravity="top"
+                        android:text="0"
+                        android:textColor="#798DAA"
+                        android:textSize="32sp" />
+
+                    <TextView
+                        android:id="@+id/danwei3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:text="%"
+                        android:layout_gravity="center|top"
+                        android:gravity="top"
+                        android:textColor="#798DAA"
+                        android:textSize="32sp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sign_xueyan_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left" />
+
+            <FrameLayout
+                android:id="@+id/sign_data_framelayout3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sign_xueyan_jieguo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/home_right"
+                    android:gravity="center|right"
+                    android:text="正常"
+                    android:textColor="#3AE5FE"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sign_xueyan_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|right"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="3小时前"
+                    android:textColor="#CAD8E2"
+                    android:textSize="10sp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#F6F9FB" />
+
+
+        <LinearLayout
+            android:id="@+id/xuetan_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="3dp"
+                    android:text="血糖"
+                    android:textColor="#798DAA"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/home_sign_nodata4"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textSize="17sp"
+                    android:textColor="#D1DDE6"
+                    android:visibility="gone"
+                    android:text="暂无数据请及时测量"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/home_signdata_linear4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sign_xuetan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:layout_gravity="center|top"
+                        android:gravity="top"
+                        android:textColor="#798DAA"
+                        android:textSize="32sp"
+                       />
+
+                    <TextView
+                        android:id="@+id/danwei4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="mmol/L"
+                        android:textColor="#798DAA"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sign_xuetan_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|left" />
+
+            <FrameLayout
+                android:id="@+id/sign_data_framelayout4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sign_xuetan_jieguo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/home_right"
+                    android:gravity="center|right"
+                    android:textSize="15sp"
+                    android:text="正常"
+                    android:textColor="#3AE5FE"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sign_xuetan_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center|right"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2天前"
+                    android:textColor="#CAD8E2"
+                    android:textSize="10sp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#F6F9FB" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tiwen_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:textSize="12sp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="3dp"
+                android:text="体温"
+                android:textColor="#798DAA"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/home_sign_nodata5"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:textSize="17sp"
+                android:textColor="#D1DDE6"
+                android:visibility="gone"
+                android:text="暂无数据请及时测量"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/home_signdata_linear5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sign_tiwen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_gravity="center|top"
+                    android:gravity="top"
+                    android:textColor="#798DAA"
+                    android:textSize="32sp"
+                    />
+
+                <TextView
+                    android:id="@+id/danwei1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="℃"
+                    android:textColor="#798DAA"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sign_tiwen_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center|left" />
+
+        <FrameLayout
+            android:id="@+id/sign_data_framelayout5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sign_tiwen_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="刚刚"
+                android:textColor="#CAD8E2"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/sign_tiwen_jieguo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/home_right"
+                android:gravity="center|right"
+                android:text="偏高"
+                android:textColor="#3AE5FE"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sign_linear_data_null"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#F6F9FB" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@mipmap/home_data_null"
+            android:drawablePadding="5dp"
+            android:text="没数据，好尴尬"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

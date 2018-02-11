@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#7FBDFF"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/doctor_back"
+            android:layout_width="10.8dp"
+            android:layout_height="18.8dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/btn_back"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="健康档案"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <microtech.hxswork.com.android_work.widget.MyScorllView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#7FBDFF"
+            android:fitsSystemWindows="true"
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="#7FBDFF"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:alpha="0.5"
+                    android:background="@drawable/case_name_back_shape"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center|top"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:id="@+id/case_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:textColor="#ffffff"
+                            android:text="何某（自己）"
+                            android:alpha="1"
+                            />
+                        <ImageView
+                            android:id="@+id/case_xia"
+                            android:layout_width="17dp"
+                            android:layout_height="8.8dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@mipmap/case_xia"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            />
+
+                        <ImageView
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:alpha="0.5"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/case_yuan"
+                            />
+                        <TextView
+                            android:id="@+id/case_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="男"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="#ffffff"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/case_sui"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:text="60岁"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="18385655626"
+                            />
+
+                        <ImageView
+                            android:layout_width="4dp"
+                            android:layout_height="4dp"
+                            android:alpha="0.5"
+                            android:layout_marginLeft="8dp"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/case_yuan"
+                            />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:visibility="invisible"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|bottom"
+                        >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#FAFBFD"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:background="@drawable/case_bootm_shape1"
+                    android:layout_marginRight="15dp"
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/case_linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="24dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/case_beijin_item"
+                                android:textColor="#7FBDFF"
+                                android:textSize="16sp"
+                                android:text="现病情"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                />
+
+                            <ImageView
+                                android:id="@+id/case_xia_1"
+                                android:layout_width="17dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/case_xia_on"
+                                android:layout_marginRight="25dp"
+                                android:layout_height="8.8dp"/>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/case_linear1_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#898EA6"
+                            android:maxLines="1"
+                            android:textSize="14sp"
+                            android:text="有无患过传染病、地方病和其他疾病，发病日..."
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/case_linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/case_beijin_item"
+                                android:gravity="center"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                android:paddingTop="3dp"
+                                android:text="现病情"
+                                android:textColor="#7FBDFF"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                />
+
+                            <ImageView
+                                android:id="@+id/case_xia_2"
+                                android:layout_width="17dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/case_xia_on"
+                                android:layout_marginRight="25dp"
+                                android:layout_height="8.8dp"/>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/case_linear2_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:scaleType="fitXY"
+                            android:maxLines="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#898EA6"
+                            android:textSize="14sp"
+                            android:text="有无患过传染病、地方病和其他疾病，发病日..."
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/case_linear3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/case_beijin_item"
+                                android:textColor="#7FBDFF"
+                                android:textSize="16sp"
+                                android:text="家族历"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center"
+                                android:paddingTop="3dp"
+                                android:paddingBottom="3dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                />
+
+                            <ImageView
+                                android:id="@+id/case_xia_3"
+                                android:layout_width="17dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/case_xia_on"
+                                android:layout_marginRight="25dp"
+                                android:layout_height="8.8dp"/>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/case_linear3_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:scaleType="fitXY"
+                            android:maxLines="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="#898EA6"
+                            android:textSize="14sp"
+                            android:text="有无患过传染病、地方病和其他疾病，发病日..."
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#E9F0F5"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/case_linear4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/case_beijin_item2"
+                                android:textColor="#ffffff"
+                                android:textSize="16sp"
+                                android:text="诊断"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="12dp"
+                                />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:visibility="invisible"
+                                />
+
+                            <ImageView
+                                android:id="@+id/case_xia_4"
+                                android:layout_width="17dp"
+                                android:layout_gravity="center"
+                                android:background="@mipmap/case_xia_on"
+                                android:layout_marginRight="25dp"
+                                android:layout_height="8.8dp"/>
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/case_linear4_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center"
+                            android:gravity="top"
+                            android:textColor="#898EA6"
+                            android:textSize="14sp"
+                            android:text="温36.3℃，脉搏78次/分，呼吸21次/分，血压115/80mmHg。 发育正常，营养中等，神志清，精神差，自主体位，扶入病房，查体合作。全身皮肤粘膜无黄染，各浅表淋巴结未触及肿大温36.3℃，脉搏78次/分，呼吸21次/分，血…"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="85dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible"
+                            />
+                        <ImageView
+                            android:layout_width="77.7dp"
+                            android:layout_height="77.7dp"
+                            android:background="@mipmap/case_bootm"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+</microtech.hxswork.com.android_work.widget.MyScorllView>
+
+</LinearLayout>

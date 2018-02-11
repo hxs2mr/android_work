@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/title_linear"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/webview_next_back"
+            android:layout_width="11dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/btn_left"
+            android:layout_marginLeft="12dp"
+            />
+        <TextView
+            android:id="@+id/webview_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#898EA6"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:layout_marginRight="23dp"
+            android:text="XXX问答"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="#798DAA"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="详情"
+            />
+        <ImageView
+            android:id="@+id/webview_next_fenxiang"
+            android:layout_width="20dp"
+            android:layout_height="21dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/web_fen"
+            android:layout_marginRight="12dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E9F0F5"
+        />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>

@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F8FC">
+
+<LinearLayout
+    android:id="@+id/deail_top_linear"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/new_head_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:visibility="invisible"
+        >
+    <FrameLayout
+        android:id="@+id/doctor_deail_tubiao_frame1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_deail_headimage1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@mipmap/doctor_doctor" />
+
+        <ImageView
+            android:id="@+id/doctor_deail_sex1"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="4dp"
+            android:elevation="4dp"
+            android:ems="1"
+            android:maxLines="1"
+            android:src="@mipmap/doctor_men" />
+    </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+         <TextView
+             android:id="@+id/doctor_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="姓名"
+            android:layout_gravity="left"
+            android:textColor="#8FACC8"
+        />
+            <TextView
+                android:id="@+id/doctor_liebie2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:gravity="center|left"
+                android:text="外科医生"
+                android:textColor="#8FACC8"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/doctor_deail_back"
+        android:layout_width="10.8dp"
+        android:layout_height="18.8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@mipmap/btn_left"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/deail_top_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="医生详情"
+        android:textColor="#798DAA"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingRight="25dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/doctor_liao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#8FACC8"
+        android:gravity="right|center"
+        android:layout_gravity="center"
+        android:layout_marginRight="15dp"
+        android:text="联系医生"
+        />
+</LinearLayout>
+
+    <microtech.hxswork.com.android_work.widget.MyScorllView
+        android:id="@+id/doctor_scorllview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:id="@+id/deail_linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:scrollbars="none"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/doctor_deail_shape1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/doctor_deal_gonhao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="12dp"
+                        android:text="工号：778561"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <FrameLayout
+                        android:id="@+id/doctor_deail_tubiao_frame"
+                        android:layout_width="61dp"
+                        android:layout_height="61dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="25dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/doctor_deail_headimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/doctor_doctor" />
+
+                        <ImageView
+                            android:id="@+id/doctor_deail_sex"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginRight="4dp"
+                            android:elevation="4dp"
+                            android:ems="1"
+                            android:maxLines="1"
+                            android:src="@mipmap/doctor_men" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10.3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:background="#FFFFFF" />
+
+                        <TextView
+                            android:id="@+id/doctor_name"
+                            android:layout_width="56dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center"
+                            android:text="阿西吧"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="20dp"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:background="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/doctor_deail_doctorleibie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:text="主治医生"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/doctot_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="31dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/doctor_phone"
+                        android:drawablePadding="12dp"
+                        android:gravity="center"
+                        android:text="电话:"
+                        android:textColor="#A8BED3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/doctor_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:text="15223211566"
+                        android:textColor="#798DAA"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/doctot_yiyuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="17dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/doctor_yiyuan"
+                        android:drawablePadding="12dp"
+                        android:gravity="center"
+                        android:text="医院:"
+                        android:textColor="#A8BED3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/doctor_yiyuan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:maxLines="1"
+                        android:scaleType="fitXY"
+                        android:text="贵州省人民医院白云附属医院"
+                        android:textColor="#798DAA"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/doctor_deail_xian" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:drawableLeft="@mipmap/doctor_yuan"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="简介："
+                        android:textColor="#A8BED3"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/doctor_chang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="五官科，外科，妇科"
+                        android:textColor="#798DAA"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="14dp"
+                    android:background="#E9F0F5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/doctor_deail_backtime"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@mipmap/doctor_deail_chutime"
+                        android:drawablePadding="9dp"
+                        android:gravity="center"
+                        android:text="出诊时间"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="#E9F0F5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="上午"
+                            android:textColor="#898EA6"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="下午"
+                            android:textColor="#898EA6"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="晚上"
+                            android:textColor="#898EA6"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#CFD9E8" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="0.4dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="31dp"
+                                android:gravity="center"
+                                android:text="周一"
+                                android:textColor="#A2ADCE"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#CFD9E8" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="31dp"
+                                android:gravity="center"
+                                android:text="周二"
+                                android:textColor="#A2ADCE"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#CFD9E8" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="31dp"
+                                android:gravity="center"
+                                android:text="周三"
+                                android:textColor="#A2ADCE"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#CFD9E8" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="31dp"
+                                android:gravity="center"
+                                android:text="周四"
+                                android:textColor="#A2ADCE"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#CFD9E8" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="31dp"
+                                android:gravity="center"
+                                android:text="周五"
+                                android:textColor="#A2ADCE"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#CFD9E8" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="31dp"
+                                android:gravity="center"
+                                android:text="周六"
+                                android:textColor="#A2ADCE"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0.5dp"
+                                android:background="#CFD9E8" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="31dp"
+                                android:gravity="center"
+                                android:text="周日"
+                                android:textColor="#A2ADCE"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="3"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="vertical">
+
+                            <microtech.hxswork.com.android_work.widget.MyGridView
+                                android:id="@+id/doctor_time_gridview"
+                                android:layout_width="match_parent"
+                                android:layout_height="219.5dp"
+                                android:layout_gravity="center|top"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:numColumns="3" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="#CFD9E8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/doctor_deail_backtime1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="34dp"
+                    android:background="#F4F8FC"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="#E9F0F5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="到底啦"
+                        android:textColor="#CFD9E8"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0.5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:layout_weight="1"
+                        android:background="#E9F0F5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deail_linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F8FC"
+                android:orientation="vertical"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:background="@mipmap/icon_essential"
+                            />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="基本信息"
+                        android:textColor="#A8BED3"
+                        android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:text="姓名"
+                            android:textColor="#798DAA"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/qian_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center|right"
+                            android:maxLines="1"
+                            android:hint="请输入姓名(必填)"
+                            android:textColorHint="#8c898EA6"
+                            android:textColor="#798DAA"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="2dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#38E6FF"
+                            android:gravity="center"
+                            android:textColor="#8FACC8" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:text="手机号"
+                            android:textColor="#798DAA"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/qian_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:maxLength="11"
+                            android:maxLines="1"
+                            android:background="@null"
+                            android:hint="请输入手机号(必填)"
+                            android:gravity="center|right"
+                            android:inputType="phone"
+                            android:textColorHint="#8c898EA6"
+                            android:textColor="#798DAA"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:text="家庭住址"
+                            android:textColor="#798DAA"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/qian_city"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center|right"
+                            android:hint="如实填写，即时分配最近的社区医"
+                            android:maxLines="2"
+                            android:textColor="#CAD8E2"
+                            android:textColorHint="#D1DDE6"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="25dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center"
+                            android:background="@mipmap/icon_mark"
+
+                            />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="重点人群标记（多选）"
+                        android:textColor="#A8BED3"
+                        android:textSize="18sp" />
+
+                        </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:text="老年人"
+                            android:textColor="#798DAA"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/qian_1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="11dp"
+                            android:src="@mipmap/qian_off" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:text="冠心病"
+                            android:textColor="#798DAA"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/qian_2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="11dp"
+                            android:src="@mipmap/qian_off" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:text="心脏病"
+                            android:textColor="#798DAA"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/qian_3"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="11dp"
+                            android:src="@mipmap/qian_off" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:text="糖尿病"
+                            android:textColor="#798DAA"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/qian_4"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="11dp"
+                            android:src="@mipmap/qian_off" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/qian_ok"
+                    android:layout_width="292dp"
+                    android:layout_height="62dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="38dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@mipmap/btn_login"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:paddingBottom="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/qian_pop_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="#f4f8fc"
+                    >
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="86dp"
+                        android:background="@mipmap/qianok_bg"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="提交成功"
+                        android:textColor="#898EA6"
+                        android:textSize="20sp"
+                        android:layout_marginTop="24dp"
+                        />
+                    <TextView
+                        android:layout_width="193dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#A2ADCE"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:text="我们会在24小时内为您安排签约医生，情耐心等待。"
+                        />
+
+                    <TextView
+                        android:id="@+id/qianok_back"
+                        android:layout_width="230dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:layout_height="66dp"
+                        android:background="@mipmap/btn_login"
+                        android:textColor="#ffffff"
+                        android:text="查看健康常识"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </microtech.hxswork.com.android_work.widget.MyScorllView>
+
+
+</LinearLayout>

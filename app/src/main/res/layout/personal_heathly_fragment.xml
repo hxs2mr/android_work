@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/heathly_bg"
+    />
+
+
+   <LinearLayout
+       android:id="@+id/heathly_btn_back_linear"
+       android:layout_width="40dp"
+       android:layout_height="50dp"
+       android:orientation="horizontal"
+       >
+<ImageView
+    android:id="@+id/heathly_btn_back"
+    android:layout_width="11dp"
+    android:layout_height="20dp"
+    android:background="@mipmap/heathly_btn_back"
+    android:layout_gravity="center"
+    android:layout_marginLeft="12dp"
+    />
+   </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="#E9F0F5"
+        >
+
+        <LinearLayout
+            android:id="@+id/personal_heathly_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/personal_heathly_shape"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#798DAA"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="神经系统"
+                android:layout_marginLeft="12dp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/heath_right"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/personal_heathly_linear2"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/personal_heathly_shape"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#798DAA"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="消化系统"
+                android:layout_marginLeft="12dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/heath_right"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/personal_heathly_linear3"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/personal_heathly_shape"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#798DAA"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="循环系统"
+                android:layout_marginLeft="12dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/heath_right"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/personal_heathly_linear4"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/personal_heathly_shape"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#798DAA"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="运动系统"
+                android:layout_marginLeft="12dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/heath_right"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/personal_heathly_linear5"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/personal_heathly_shape"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#798DAA"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="其他"
+                android:layout_marginLeft="12dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="8.8dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/heath_right"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="chat_title_bg">#427BED</color>
+    <color name="text_selected">#38E6FF</color>
+    <!-- 背景色 -->
+    <color name="bg_ltgray">#F5F5F5</color>
+    <color name="bg_ee">#eeeeee</color>
+    <color name="bg_red">#e02301</color>
+    <color name="bg_blue">#415ca0</color>
+    <color name="bg_blue2">#617cc0</color>
+    <color name="font_orange">#ec7354</color>
+
+
+    <!-- 线条颜色 -->
+    <color name="line_orange">#ea572b</color>
+    <color name="white">#ffffff</color>
+    <color name="line_cc">#cccccc</color>
+    <color name="line_aa">#aaaaaa</color>
+    <color name="line_99">#999999</color>
+    <color name="line_66">#666666</color>
+    <color name="line_33">#333333</color>
+
+    <color name="black_off">#898EA6</color>
+
+    <color name="font_dkgray">#8FACC8</color>
+    <!--常用普通色-->
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#80FFFFFF</color>
+    <color name="transparent_70">#B3FFFFFF</color>
+    <color name="transparent_60">#80cccccc</color>
+    <color name="transparent_50">#80aaaaaa</color>
+    <color name="yellow">#f6a10a</color>
+    <color name="bg_all">#e67817</color>
+    <color name="red">#f53131</color>
+    <color name="half_red">#7A1818</color>
+    <color name="green">#53d763</color>
+    <color name="half_green">#296B31</color>
+    <color name="half_white">#AAAAAA</color>
+    <color name="blue">#2D7FBA</color>
+    <color name="half_blue">#2272AA</color>
+    <color name="grey">#8C8C8C</color>
+    <color name="half_grey">#464646</color>
+    <color name="orange">#7FBEFF</color>
+    <color name="gray">#cccccc</color>
+    <color name="black">#000000</color>
+    <color name="login_type">#38E6FF</color>
+    <color name="login_title">#0f3e75</color>
+    <color name="register_btn">#f49c1e</color>
+    <color name="violet">#8957a1</color>
+    <color name="pink_red">#ec7b83</color>
+    <color name="burlywood">#DEB887</color>
+    <color name="paleturquoise">#AFEEEE</color>
+</resources>

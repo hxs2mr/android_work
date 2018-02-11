@@ -1,0 +1,1 @@
+include ':app', ':commom', ':photopicker', ':share', ':zxing', ':citypicker', ':uikit'

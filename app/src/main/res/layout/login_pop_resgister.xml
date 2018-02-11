@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/resgister_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/for_back"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="账号注册"
+            android:textColor="#38E6FF"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:src="@mipmap/for_back"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#8ccccccc"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/register_username_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:visibility="invisible"
+                        android:layout_marginBottom="2dp"
+                        android:src="@mipmap/login_username_delete"
+                        />
+
+                    <microtech.hxswork.com.android_work.Util.CustomEditText
+                        android:id="@+id/resgister_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#8ccccccc"
+                        android:digits="1234567890"
+                        android:gravity="left|center"
+                        android:hint="输入账号/手机号"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:textColorHint="#8ccccccc"
+                        android:textSize="15sp"
+                        app:inputType="phone" />
+
+                </FrameLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lienar2"
+                android:layout_below="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/resgister_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="输入四位验证码"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:gravity="left|center"
+                        android:inputType="phone"
+                        android:textSize="15sp"
+                        android:backgroundTint="#8ccccccc"
+                        android:textColorHint="#8ccccccc"
+                        android:paddingLeft="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/resgister_miao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:layout_marginBottom="2dp"
+                        android:textColor="#38E6FF"
+                        android:padding="3dp"
+                        android:textSize="12sp"
+                        android:text="获取验证码"
+                        />
+
+                </FrameLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_below="@+id/lienar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/resgister_password_look"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="输入6至15位密码"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:gravity="left|center"
+                        android:inputType="textPassword"
+                        android:textSize="15sp"
+                        android:backgroundTint="#8ccccccc"
+                        android:textColorHint="#8ccccccc"
+                        android:paddingLeft="5dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/register_look"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:visibility="invisible"
+                        android:layout_marginBottom="2dp"
+                        android:src="@mipmap/login_password_look"
+                        />
+
+                </FrameLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_below="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/restiger_login"
+                        android:layout_margin="1dp"
+                        android:layout_width="264dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="center"
+                        android:background="@mipmap/btn_login"
+                        android:text="注册"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:padding="7dp"
+                        />
+                </FrameLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

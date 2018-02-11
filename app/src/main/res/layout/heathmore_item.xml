@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+<LinearLayout
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/more_title_image"
+            android:layout_width="32dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/more_xueya"
+            />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/heath_title"
+               android:layout_width="wrap_content"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:textColor="#798DAA"
+               android:textSize="15sp"
+               android:layout_gravity="center|left"
+               android:gravity="center|left"
+               android:text="血压"
+               />
+            <TextView
+                android:id="@+id/more_time"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="#A8BED3"
+                android:textSize="10sp"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                android:text="测量时间：2017/09/18"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E9F0F5"
+        />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/more_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#38E6FF"
+        android:layout_gravity="center|left"
+        android:gravity="center"
+        android:text="血压正常"
+        />
+    <LinearLayout
+        android:layout_gravity="center|left"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:gravity="center|left"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/more_title_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#798DAA"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center|left"
+            android:text="收缩压/舒张压："
+            />
+        <TextView
+            android:id="@+id/more_title_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#798DAA"
+            android:textSize="15sp"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_gravity="center|left"
+            android:text="130/90mmHg"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center|left"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#798DAA"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_gravity="center|left"
+            android:text="参考值:"
+            />
+        <TextView
+            android:id="@+id/more_changkao_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#798DAA"
+            android:textSize="14sp"
+            android:gravity="center|left"
+            android:layout_gravity="center|left"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:scaleType="fitXY"
+            />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A8BED3"
+        android:textSize="17sp"
+        android:text="健康分析"
+        android:layout_gravity="center|left"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/heath_more_data"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#798DAA"
+        android:textSize="15sp"
+        android:text="血压正常，继续保持测量。"
+        android:layout_gravity="center|left"
+        android:gravity="center|left"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

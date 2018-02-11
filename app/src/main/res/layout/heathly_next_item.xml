@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/heathly_next_item_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        >
+<ImageView
+    android:id="@+id/next_image"
+    android:layout_width="82dp"
+    android:layout_height="82dp"
+    android:layout_marginLeft="15dp"
+    android:layout_gravity="center"
+    />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/next_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:scaleType="fitXY"
+                android:layout_gravity="center|top"
+                android:gravity="center|left|top"
+                android:textColor="#8FACC8"
+                android:textSize="16sp"
+                android:text="60-70%的中风病人经抢救治疗后快速恢复办法"
+                />
+<TextView
+    android:id="@+id/next_time"
+    android:layout_width="match_parent"
+    android:maxLines="1"
+    android:textColor="#D1DDE6"
+    android:textSize="12sp"
+    android:layout_height="0dp"
+    android:text="2017/12/21"
+    android:layout_gravity="bottom"
+    android:gravity="bottom|left"
+    android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

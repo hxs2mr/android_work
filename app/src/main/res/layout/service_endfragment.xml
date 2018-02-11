@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:qdx="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:background="#F4F8FC"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <microtech.hxswork.com.android_work.serviceui.NestingScrollPlanLayout
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:header_view="@+id/book_header"
+        app:target_view="@+id/scroll_view"
+        app:header_init_offset="0dp"
+        app:target_init_offset="220dp">
+        <FrameLayout
+            android:id="@+id/book_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FAFBFD"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="#7FBDFF"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:clipChildren="false"
+                >
+                <microtech.hxswork.com.android_work.widget.LoopViewPager
+                    android:id="@+id/looviewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    ></LinearLayout>
+            </LinearLayout>
+
+            </FrameLayout>
+        <LinearLayout
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <android.support.design.widget.TabLayout
+                android:id="@+id/mTabLayout"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                app:tabMode="scrollable"
+                app:tabGravity="center"
+                android:layout_height="40dp"
+               />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/id_vp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+</microtech.hxswork.com.android_work.serviceui.NestingScrollPlanLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

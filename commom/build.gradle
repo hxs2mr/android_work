@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //noinspection GradleDynamicVersion
+    compile 'com.android.support:appcompat-v7:26.+'
+    //noinspection GradleDynamicVersion
+    compile 'com.android.support:recyclerview-v7:26.+'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta3'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+    //noinspection GradleDynamicVersion
+    compile 'com.android.support:design:26.+'
+    compile 'io.reactivex:rxjava:1.0.1'
+    //noinspection GradleDependency
+    compile 'com.android.support:multidex:1.0.0'
+    //分包
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    //view注解
+    //noinspection GradleDependency
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    //显示图片框架
+    //noinspection GradleDynamicVersion
+    compile 'com.android.support:cardview-v7:26.+'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta3'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.squareup.leakcanary:leakcanary-analyzer:1.5.1'
+    compile files('libs/mongo-java-driver-3.4.2.jar')
+    compile files('libs/jackson-databind-2.4.3.jar')
+    compile files('libs/jackson-core-2.4.3.jar')
+    compile files('libs/jackson-annotations-2.4.3.jar')
+    //noinspection GradleDynamicVersion
+    compile 'com.qiniu:qiniu-android-sdk:7.3.+'
+    //wup包 如果和其他腾讯系的sdk 发生wup冲突，这个依赖可不添加
+    compile 'com.tencent.wup:wup:1.0.0.E-alpha'
+}

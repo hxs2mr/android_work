@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="item_count" format="integer"></attr>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+    </declare-styleable>
+    <declare-styleable name="BezierRoundView">
+        <attr name="color_bez" format="color"/>
+        <attr name="color_touch" format="color"/>
+        <attr name="color_stroke" format="color"/>
+        <attr name="time_animator" format="integer"/>
+        <attr name="round_count" format="integer"/>
+        <attr name="radius" format="dimension"/>
+
+    </declare-styleable>
+
+    <!-- 源文件图片 -->
+    <attr name="src" format="reference" />
+
+    <declare-styleable name="RotatImageView">
+        <attr name="src" />
+    </declare-styleable>
+    <declare-styleable name="RoundImageView">
+        <!-- 描边宽度-->
+        <attr name="border_width" format="dimension"/>
+        <!-- 描边颜色-->
+        <attr name="border_color" format="color"/>
+        <!--圆角大小-->
+        <attr name="corner_radius" format="dimension"/>
+        <!--左上圆角大小-->
+        <attr name="leftTop_corner_radius" format="dimension"/>
+        <!--右上圆角大小-->
+        <attr name="rightTop_corner_radius" format="dimension"/>
+        <!--左下圆角大小-->
+        <attr name="leftBottom_corner_radius" format="dimension"/>
+        <!--右下圆角大小-->
+        <attr name="rightBottom_corner_radius" format="dimension"/>
+        <!--图片类型：圆角或者圆形-->
+        <attr name="type" format="enum">
+            <enum name="oval" value="2"/>
+            <enum name="round" value="1"/>
+            <enum name="circle" value="0"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="XEditText">
+        <attr name="x_separator" format="string"/>
+        <attr name="x_customizeMarkerEnable" format="boolean"/>
+        <attr name="x_showMarkerTime">
+            <enum name="after_input" value="0"/>
+            <enum name="before_input" value="1"/>
+            <enum name="always" value="2"/>
+        </attr>
+        <attr name="x_iOSStyleEnable" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="header_view" format="reference"/>
+    <attr name="target_view" format="reference"/>
+    <attr name="header_init_offset" format="dimension"/>
+    <attr name="target_init_offset" format="dimension"/>
+    <declare-styleable name="NestingScrollPlanLayout">
+        <attr name="header_view"/>
+        <attr name="target_view"/>
+        <attr name="header_init_offset"/>
+        <attr name="target_init_offset"/>
+    </declare-styleable>
+
+    <declare-styleable name="EventDispatchPlanLayout">
+        <attr name="header_view"/>
+        <attr name="target_view"/>
+        <attr name="header_init_offset"/>
+        <attr name="target_init_offset"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressbar">
+        <attr name="in_circle_color"  format="color"/>
+    </declare-styleable>
+</resources>
